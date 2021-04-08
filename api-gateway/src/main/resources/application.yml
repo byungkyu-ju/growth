@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: websocket_socketjs_route
+          uri : http://localhost:8080
+          predicates:
+            - Path=/**
+  application:
+    name: api-gateway
+server:
+  port: 30000
