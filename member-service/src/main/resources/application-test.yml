@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: service-test
+  datasource:
+    url: jdbc:h2:mem:member-service
+    username: member-admin
+    password: member-admin
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true

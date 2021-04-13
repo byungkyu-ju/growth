@@ -22,6 +22,24 @@ services:
       - 'mode=standalone'
     ports:
       - 6379:6379
+  mysql:
+    image: mysql:5.7
+    restart: always
+    container_name: 'mysql-growth'
+    ports:
+    - '13306:3306'
+    environment:
+      - MYSQL_DATABASE=MYSQL
+      - MYSQL_ROOT_PASSWORD=changeme
+      - TZ=Asia/Seoul
+
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - /Users/Shared/data/mysql:/var/lib/mysql
+
+
 
 networks:
   rabbitmq_go_net:

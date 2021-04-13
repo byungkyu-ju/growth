@@ -1,12 +1,47 @@
+server:
+  port: 30000
+
 spring:
   cloud:
     gateway:
       routes:
-        - id: websocket_socketjs_route
-          uri : http://localhost:8080
+        - id: CHAT_SERVICE
+          uri: lb://CHAT_SERVICE
           predicates:
-            - Path=/**
+            - Path=/chat/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: CHAT_SERVICE
+                fallbackuri: forward:/fallback/user-service
+
+        - id: MEMBER_SERVICE
+          uri : lb://MEMBER_SERVICE
+          predicates:
+            - Path=/member/**
+            - Path=/members/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: MEMBER_SERVICE
+                fallbackuri: forward:/fallback/member-service
+
   application:
-    name: api-gateway
-server:
-  port: 30000
+    name: API-GATEWAY
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
