@@ -2,7 +2,7 @@ package me.bk.memberservice.api;
 
 import static me.bk.memberservice.MemberAcceptanceTest.*;
 import static org.assertj.core.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -12,7 +12,6 @@ import org.mockito.Mock;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import me.bk.memberservice.Member;
 import me.bk.memberservice.application.MemberService;
 import me.bk.memberservice.dto.MemberCreateRequest;
 import me.bk.memberservice.dto.MemberLoginInfoRequest;

@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.RequiredArgsConstructor;
-import me.bk.memberservice.Member;
 import me.bk.memberservice.application.MemberService;
 import me.bk.memberservice.dto.MemberCreateRequest;
 import me.bk.memberservice.dto.MemberLoginInfoRequest;

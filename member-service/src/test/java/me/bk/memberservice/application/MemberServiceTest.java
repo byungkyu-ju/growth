@@ -2,7 +2,7 @@ package me.bk.memberservice.application;
 
 import static me.bk.memberservice.MemberAcceptanceTest.*;
 import static org.assertj.core.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 import java.util.Optional;
@@ -12,7 +12,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.stereotype.Service;
 
 import me.bk.memberservice.Member;
 import me.bk.memberservice.dto.MemberCreateRequest;

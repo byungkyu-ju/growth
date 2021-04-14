@@ -37,6 +37,8 @@ dependencies {
 
     //eureka client
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    //config server
+    implementation 'org.springframework.cloud:spring-cloud-config-server'
 }
 
 dependencyManagement {

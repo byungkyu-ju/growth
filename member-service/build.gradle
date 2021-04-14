@@ -38,6 +38,8 @@ dependencies {
 
     // db
     runtimeOnly 'com.h2database:h2'
+    //config server
+    implementation 'org.springframework.cloud:spring-cloud-config-server'
 
     // eureka client
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
