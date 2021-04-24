@@ -35,8 +35,8 @@ public class Member {
 		this.nickName = nickName;
 	}
 
-	public boolean isEqualPassword(String passwordConfirm) {
-		return this.password.equals(passwordConfirm);
+	public boolean isEqualPassword(String confirmPassword) {
+		return this.password.equals(confirmPassword);
 	}
 
 	public void checkPassword(String password) {

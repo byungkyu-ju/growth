@@ -3,6 +3,7 @@ package me.bk.memberservice.api;
 import java.net.URI;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,5 +34,10 @@ public class MemberController {
 	@PostMapping("/member/loginInfo")
 	public ResponseEntity<MemberLoginInfoResponse> findMemberLoginInfo(@RequestBody MemberLoginInfoRequest request) {
 		return ResponseEntity.ok().body(memberService.findMemberLoginInfo(request));
+	}
+
+	@GetMapping("/member")
+	public ResponseEntity<MemberLoginInfoResponse> getTest() {
+		return ResponseEntity.ok().body(new MemberLoginInfoResponse(1L, "dummy", "nick"));
 	}
 }

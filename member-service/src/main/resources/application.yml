@@ -3,4 +3,4 @@ server:
 
 spring:
   application:
-    name: MEMBER_SERVICE
+    name: MEMBER-SERVICE

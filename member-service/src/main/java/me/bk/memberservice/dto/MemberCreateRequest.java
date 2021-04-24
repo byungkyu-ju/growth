@@ -18,6 +18,6 @@ import lombok.NoArgsConstructor;
 public class MemberCreateRequest {
 	private String email;
 	private String password;
-	private String passwordConfirm;
+	private String confirmPassword;
 	private String nickName;
 }

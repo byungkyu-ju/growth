@@ -1,20 +1,30 @@
 server:
   port: 30000
 
+
 spring:
   cloud:
     gateway:
-      routes:
-        - id: CHAT_SERVICE
-          uri: lb://CHAT_SERVICE
-          predicates:
-            - Path=/chat/**
 
-        - id: MEMBER_SERVICE
-          uri : lb://MEMBER_SERVICE
-          predicates:
-            - Path=/member/**
-            - Path=/members/**
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins: '*'
+            allowed-methods:
+              - GET
+              - POST
+              - DELETE
+              - PUT
+              - OPTIONS
+            allowed-headers:
+              - x-requested-with
+              - authorization
+              - content-type
+              - credential
+              - X-AUTH-TOKEN
+              - X-CSRF-TOKEN
+            allow-credentials: true
+
 
   application:
     name: API-GATEWAY
