@@ -33,8 +33,6 @@ Pmember-service/src/main/java/me/bk/memberservice/dto/MemberLoginInfoRequest.jav
 Smember-service/src/test/java/me/bk/memberservice/MemberServiceApplicationTests.java,1/7/17efcbd7194eb44afa6d4887da085000dbd31fae
 Å
 Qmember-service/src/main/java/me/bk/memberservice/dto/MemberLoginInfoResponse.java,8/9/89fafbec4c0d25db01abdcc58955ca014113d0bd
-z
-Jmember-service/src/main/java/me/bk/memberservice/api/MemberController.java,a/b/ab575effd7221bd52a0b14f8e37e63bdc55698c8
 Ü
 Vmember-service/src/main/java/me/bk/memberservice/config/ExternalTransactionConfig.java,b/a/bae11e892941adec2c9bbcc719315c4bc6d3adfb
 É
@@ -118,3 +116,13 @@ x
 Hapi-gateway/src/main/java/me/bk/apigateway/config/SpringCloudConfig.java,d/1/d1fd68f63ee628ce3de991dc83ce3cf4448716ae
 p
 @api-gateway/src/main/java/me/bk/apigateway/config/WebConfig.java,e/9/e9770bd8cd36debb5a50260501547f0da11b7789
+?
+ui/src/logo.svg,0/f/0fbecd8b40d64639eee55a35973f820dea8b9276
+^
+.api-gateway/src/main/resources/application.yml,7/7/77c21751ba88503925a125b16f07eb3b0daf4892
+a
+1member-service/src/main/resources/application.yml,0/7/0741801e31a5b20ccbd38e1933a586ef9ce76f7d
+\
+,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
+9
+	ui/ui.iml,d/1/d138e7879c3a5036f9256d1eecaa2665bda9d0bf
