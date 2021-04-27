@@ -1,20 +1,18 @@
 import {Button} from "@material-ui/core";
 import axios from 'axios';
+import {useEffect} from "react";
 function Check(){
 
-    const findMember = () => {
+    useEffect(() => {
         axios.get('/api/member').then((response) => {
             console.log(response);
         })
-    }
+    },[])
+
     return (
         <div className="Check">
             <div>
-                <Button
-                    onClick={findMember}
-                >
-                    call member
-                </Button>
+                call member
             </div>
         </div>
     );

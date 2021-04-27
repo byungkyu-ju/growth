@@ -5,7 +5,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import me.bk.memberservice.Member;
+import me.bk.memberservice.domain.Member;
 
 /**
  * @author : byungkyu

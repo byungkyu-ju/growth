@@ -1,15 +1,23 @@
 server:
   port: 30000
 
+security:
+  jwt:
+    token:
+      secret-key: 52a7ffac1c4bcfa75629247e94cf707120dd356fe68eee723eeb0c38ef6cfc0d
 
 spring:
   cloud:
     gateway:
-
+      routes:
+        - id: MEMBER-SERVICE
+          uri: lb://MEMBER-SERVICE
+          predicates:
+            - Path=/members/**
       globalcors:
         cors-configurations:
           '[/**]':
-            allowed-origins: '*'
+            allowed-origins: 'http://localhost:3000'
             allowed-methods:
               - GET
               - POST
@@ -28,3 +36,4 @@ spring:
 
   application:
     name: API-GATEWAY
+

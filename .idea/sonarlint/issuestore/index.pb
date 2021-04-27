@@ -3,40 +3,20 @@ B
 docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
 <
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
-u
-Eapi-gateway/src/main/java/me/bk/apigateway/ApiGatewayApplication.java,5/1/5168b1ef27d0c3d953e8ad287771cd8a91248561
 D
 chat-service/HELP.md,0/c/0c22390c983304745cb8d85b33b1ee7517fd161c
 F
 member-service/HELP.md,f/b/fba66bbbe0bc59b591b7eb1909c7be1e29e2d0c3
-K
-member-service/build.gradle,4/9/49078b4e2c3d67329e2d1f847bc2bea4a781921c
 t
 Dmember-service/src/test/java/me/bk/memberservice/AcceptanceTest.java,f/2/f2cf4e6ce4d6c8dcd5790517279bcf54a230fea2
 ~
 Nmember-service/src/test/java/me/bk/memberservice/api/MemberControllerTest.java,4/e/4e708760ae9bed0edb09780e618a84bf71029eaa
-}
-Mmember-service/src/main/java/me/bk/memberservice/dto/MemberCreateRequest.java,7/f/7f2625ae4dda478d2833dcaeef8efa9d5d678e29
 x
 Hmember-service/src/main/java/me/bk/memberservice/dto/MemberResponse.java,4/7/477207d052b1bf93be4e8513e1db627076e780f8
-l
-<member-service/src/main/java/me/bk/memberservice/Member.java,3/d/3dee38c5dc984472a4a2db15d352eb10e963409e
 z
 Jmember-service/src/test/java/me/bk/memberservice/MemberAcceptanceTest.java,8/0/80f5cce67bc80177c8f511778d63aff2207b1320
-
-Qmember-service/src/main/java/me/bk/memberservice/repository/MemberRepository.java,0/7/07c64b0986638d321f9215bee6b9d1733886c1f3
-
-Omember-service/src/main/java/me/bk/memberservice/application/MemberService.java,7/d/7dd0552b225c48f366ee93990bd70530fef97a3b
-€
-Pmember-service/src/main/java/me/bk/memberservice/dto/MemberLoginInfoRequest.java,6/f/6fe4630a1a21127ce6df8793c7cb16db4aa351b4
 ƒ
 Smember-service/src/test/java/me/bk/memberservice/MemberServiceApplicationTests.java,1/7/17efcbd7194eb44afa6d4887da085000dbd31fae
-
-Qmember-service/src/main/java/me/bk/memberservice/dto/MemberLoginInfoResponse.java,8/9/89fafbec4c0d25db01abdcc58955ca014113d0bd
-†
-Vmember-service/src/main/java/me/bk/memberservice/config/ExternalTransactionConfig.java,b/a/bae11e892941adec2c9bbcc719315c4bc6d3adfb
-ƒ
-Smember-service/src/test/java/me/bk/memberservice/application/MemberServiceTest.java,d/6/d678a8fa408de0d6fb3e4a3a7f6ef33cb1e28ca2
 H
 service-registry/HELP.md,2/d/2dd1087f92ef574c00826e26cb42e960714724d3
 K
@@ -45,14 +25,10 @@ M
 service-registry/build.gradle,b/3/b3181677ac6838989870149adf653a1c31ecbcaf
 „
 Tservice-registry/src/main/java/me/bk/serviceregistry/ServiceRegistryApplication.java,1/6/16ab72668e839e5012ee4ad6896df4892f6e029f
-~
-Nmember-service/src/main/java/me/bk/memberservice/MemberServiceApplication.java,7/2/723192edcbcf85c5bd90e3637c99f92688bddf0e
 x
 Hchat-service/src/main/java/me/bk/chatservice/ChatServiceApplication.java,7/4/74b378b0ee7d9ea30bbc4af5848c1574ea497683
 I
 chat-service/build.gradle,3/a/3a1d105b32c61573735ca7270336c8b25402d97f
-H
-api-gateway/build.gradle,6/8/68a416ff071be67c370ccc417719b65106ae9180
 G
 chat-service/.gitignore,c/3/c353056d2547b73f2668a73786e015a58f350671
 I
@@ -95,8 +71,6 @@ H
 0config-server/src/main/resources/application.yml,a/c/ac20186028e684b172a19bab8e9b39d6b064e685
 J
 config-server/build.gradle,9/e/9e9343d55cfc75598e543414688c2fc07bb5b139
-{
-Kconfig-server/src/main/java/me/bk/configserver/ConfigServerApplication.java,c/a/ca915e02c58c7e34beebbbb068a962e81efd971d
 €
 Pconfig-server/src/test/java/me/bk/configserver/ConfigServerApplicationTests.java,8/2/82a531e539ff2f9a752cde4f30f06c833a5a811a
 f
@@ -110,19 +84,3 @@ M
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-v
-Fmember-service/src/main/java/me/bk/memberservice/config/WebConfig.java,a/6/a69658129f1721fec32055de1197aab8fccdf2ac
-x
-Hapi-gateway/src/main/java/me/bk/apigateway/config/SpringCloudConfig.java,d/1/d1fd68f63ee628ce3de991dc83ce3cf4448716ae
-p
-@api-gateway/src/main/java/me/bk/apigateway/config/WebConfig.java,e/9/e9770bd8cd36debb5a50260501547f0da11b7789
-?
-ui/src/logo.svg,0/f/0fbecd8b40d64639eee55a35973f820dea8b9276
-^
-.api-gateway/src/main/resources/application.yml,7/7/77c21751ba88503925a125b16f07eb3b0daf4892
-a
-1member-service/src/main/resources/application.yml,0/7/0741801e31a5b20ccbd38e1933a586ef9ce76f7d
-\
-,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
-9
-	ui/ui.iml,d/1/d138e7879c3a5036f9256d1eecaa2665bda9d0bf

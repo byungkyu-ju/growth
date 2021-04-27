@@ -1,5 +1,8 @@
 package me.bk.memberservice.dto;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,8 +19,16 @@ import lombok.NoArgsConstructor;
 @Getter
 @Builder
 public class MemberCreateRequest {
+	@NotNull
+	@NotBlank
 	private String email;
+	@NotNull
+	@NotBlank
+	private String nickname;
+	@NotNull
+	@NotBlank
 	private String password;
+	@NotNull
+	@NotBlank
 	private String confirmPassword;
-	private String nickName;
 }
